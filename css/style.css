@@ -5614,6 +5614,54 @@ a.badge-dark.focus {
   text-align: center;
   margin-top: 15px;
 }
+.certi-item h3 {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.certi-item {
+  border: 5px solid #fff;
+  border-bottom: 0px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.certi-item:hover {
+  padding: 10px;
+}
+.company-quality-container {
+  background-color: #efefef;
+}
+.company-consultant {
+  margin: 40px 90px;
+}
+.video-carousel {
+  width: 100%;
+}
+
+.sidenav-cate li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  vertical-align: top;
+  font-weight: 700;
+  color: #7e8387;
+  padding: 15px;
+}
+.sidenav-cate .navbar {
+  padding: 0;
+  justify-content: center;
+}
+.sidenav-cate li a:hover {
+  background-color: #ff7c46;
+  color: #fff;
+}
+.sidenav-cate li a:focus {
+  background-color: #ff7c46;
+  color: #fff;
+}
 
 .text-product-title span {
   width: 160px;
