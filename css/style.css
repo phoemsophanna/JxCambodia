@@ -5579,10 +5579,23 @@ a.badge-dark.focus {
   font-size: 36px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+  animation: clip-path-reveal-1 3s ease alternate;
 }
+
+@keyframes clip-path-reveal-1 {
+  0%,
+  25% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
 .company-organization {
   margin: 40px 20px;
 }
+
 .text-product-title h2 {
   font-size: 36px;
   font-family: "Montserrat", sans-serif;
@@ -5661,6 +5674,102 @@ a.badge-dark.focus {
 .sidenav-cate li a:focus {
   background-color: #ff7c46;
   color: #fff;
+}
+.solution-item-container {
+  background-color: #efefef;
+}
+.solution-item-container h3 {
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+.solution-item {
+  height: auto;
+  min-height: 330px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  transition: 0.5s;
+}
+.solution-item h3 {
+  position: absolute;
+  bottom: -10%;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  transition: 0.5s;
+  background: linear-gradient(0deg, rgb(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 100%);
+  width: 97.5%;
+}
+.solution-item:hover h3 {
+  background: linear-gradient(
+    0deg,
+    rgb(95, 103, 108) 0,
+    rgb(95, 103, 108) 100%
+  );
+}
+.solution-item:hover {
+  box-shadow: 5px 5px 8px 1px #888888;
+}
+.hotline {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.hotline span {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #7e8387;
+  margin-right: 20px;
+}
+.hotline i {
+  font-size: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.hotline a {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ff7c46;
+  vertical-align: middle;
+  transition: 1s;
+}
+.customer-container {
+  background-color: #efefef;
+}
+.customer-container h3 {
+  color: #ff7c46;
+  margin-bottom: 50px;
+}
+.hotline a:hover {
+  color: black;
+}
+.tel-phone {
+  width: 100%;
+  background-color: #fff;
+  padding: 30px 0;
+  margin-right: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 1px #c0c0c08c;
+}
+.tel-phone span {
+  color: #7e8387;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.tel-phone a {
+  color: #7e8387;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 1s;
+}
+.tel-phone a:hover {
+  color: #ff7c46;
 }
 
 .text-product-title span {

@@ -552,24 +552,24 @@ var KingArchitect = (function () {
   };
 })();
 
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 30,
-    nav: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-    },
-  });
-});
+// $(document).ready(function () {
+//   $(".owl-carousel").owlCarousel({
+//     loop: true,
+//     margin: 30,
+//     nav: false,
+//     responsive: {
+//       0: {
+//         items: 1,
+//       },
+//       600: {
+//         items: 2,
+//       },
+//       1000: {
+//         items: 3,
+//       },
+//     },
+//   });
+// });
 /* Document.ready Start */
 jQuery(document).ready(function () {
   "use strict";
