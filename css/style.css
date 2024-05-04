@@ -5532,6 +5532,7 @@ a.badge-dark.focus {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   line-height: 1.4;
+  transition: 1.1s;
 }
 .youtube-products {
   transition: 1s;
@@ -5548,6 +5549,18 @@ a.badge-dark.focus {
   right: 6%;
   background-color: rgba(0, 0, 0, 0.3);
 }
+.youtube-icon2 img {
+  width: 60px;
+}
+.youtube-icon2::after {
+  content: "";
+  height: 75%;
+  width: 2px;
+  position: absolute;
+  bottom: 15%;
+  right: 6%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .youtube-products:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -5558,6 +5571,9 @@ a.badge-dark.focus {
 .youtube-products:hover .thumbnail-img {
   -webkit-transform: scale(1.15);
   transform: scale(1.1);
+}
+.youtube-products:hover span {
+  color: #fff;
 }
 .company-container {
   background-color: rgba(0, 0, 0, 0.3);
@@ -5655,7 +5671,7 @@ a.badge-dark.focus {
   width: 100%;
 }
 
-.sidenav-cate li a {
+.sidenav-cate li .nav-link {
   font-size: 14px;
   text-transform: uppercase;
   vertical-align: top;
@@ -5667,11 +5683,15 @@ a.badge-dark.focus {
   padding: 0;
   justify-content: center;
 }
-.sidenav-cate li a:hover {
+.sidenav-cate li .nav-link:hover {
   background-color: #ff7c46;
   color: #fff;
 }
-.sidenav-cate li a:focus {
+.sidenav-cate li .nav-link:focus {
+  background-color: #ff7c46;
+  color: #fff;
+}
+.nav-link .active-cate {
   background-color: #ff7c46;
   color: #fff;
 }
@@ -5880,13 +5900,12 @@ a.badge-dark.focus {
   font-family: "Montserrat", sans-serif;
 }
 
-.item-solution {
+.item-related {
   background-color: #fff;
   padding: 10px 25px;
-
   transition: 0.5s;
 }
-.solution-pic {
+.related-pic {
   padding-left: 0;
   padding-right: 0;
 }
@@ -5909,13 +5928,21 @@ a.badge-dark.focus {
   font-family: "Montserrat", sans-serif;
   transition: 0.5s;
 }
-.solution-pic img {
+.related-pic img {
   width: 100%;
 }
-.item-solution:hover {
+.related-pic span {
+  position: absolute;
+  font-size: 10px;
+  color: #444;
+  left: 0;
+  padding: 2px 5px;
+  background-color: #efefef;
+}
+.item-related:hover {
   background-color: #ff7c46;
 }
-.item-solution:hover .relate-title {
+.item-related:hover .relate-title {
   color: #fff;
 }
 .link-social {
@@ -5948,7 +5975,101 @@ a.badge-dark.focus {
   color: #fff;
 }
 
-.text-product-title span {
+.news-item {
+  border: 10px solid #fff;
+  height: auto;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.date-news {
+  padding: 10px 0 10px 20px;
+  background-color: #efefef;
+  font-weight: 500;
+  font-size: 24px;
+  color: #444;
+}
+.date-news span {
+  font-size: 10px;
+}
+.news-thumnail {
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center center;
+  transition: 0.5s;
+}
+.title-news {
+  height: 72px;
+  padding: 10px;
+  overflow: hidden;
+}
+.title-news h2 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #444;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s;
+}
+.news-item:hover {
+  background-color: #5f676c;
+  border: 10px solid #5f676c;
+}
+.news-item:hover .title-news h2 {
+  color: #fff;
+}
+.news-item:hover .news-thumnail {
+  background-position: bottom right;
+}
+
+.youtube-slider {
+  padding: 190px 0px 40px 0px;
+}
+.youtube-big {
+  width: 100%;
+  height: 400px;
+}
+.img-youtube {
+  width: 100%;
+}
+.youtube-slide-items {
+  margin-bottom: 14px;
+  background-color: #aaa;
+  transition: 0.8s;
+}
+.subtitle-youtube img {
+  margin: 10px 0px 22px 0px;
+}
+.subtitle-youtube img {
+  width: 50px;
+  display: block;
+}
+.subtitle-youtube span {
+  display: inline-block;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  overflow: hidden;
+}
+.img-youtube {
+  height: 100%;
+  overflow: hidden;
+}
+.img-youtube img {
+  transition: 0.8s;
+}
+.youtube-slide-items:hover {
+  background-color: #58595b;
+}
+.youtube-slide-items:hover .img-youtube img {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.1);
+}
+.youtube-slide-items:hover .text-product-title span {
   width: 160px;
   display: block;
   font-size: 14px;
@@ -5960,6 +6081,28 @@ a.badge-dark.focus {
   padding: 10px 0;
   background-color: #7e8387;
 }
+.title-your-container h3 {
+  margin-bottom: 15px;
+}
+.title-youtube {
+  font-size: 36px;
+  font-weight: 700;
+  display: inline-block;
+  color: #ff7c46;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+}
+.title-your-container::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 20%;
+  margin-left: 15px;
+  top: 55%;
+  background-color: #ff7c46;
+}
+
 .text-product-title1 span {
   width: 160px;
   display: block;
